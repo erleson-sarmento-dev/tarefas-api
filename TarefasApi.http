@@ -1,0 +1,20 @@
+@TarefasApi_HostAddress = http://localhost:5263
+
+GET {{TarefasApi_HostAddress}}/tarefas
+Accept: application/json
+
+###
+
+GET {{TarefasApi_HostAddress}}/tarefas/1
+Accept: application/json
+
+###
+
+POST {{TarefasApi_HostAddress}}/tarefas
+Content-Type: application/json
+
+{
+  "titulo": "Nova tarefa",
+  "descricao": "Descrição da tarefa",
+  "concluida": false
+}
